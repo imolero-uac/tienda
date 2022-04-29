@@ -1,0 +1,4 @@
+<p>Estado del carrito: {{ miCarrito.length }} valor: {{ valorCarrito }}</p>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+    <app-producto *ngFor="let producto of productos" [producto]="producto" (productoAgregado)="onAgregarProducto($event)"></app-producto>
+</div>
